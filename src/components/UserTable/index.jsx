@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import BadgeLayout from "@/components/ui/BadgeLayout";
+import BadgeLayout from "../ui/Badge";
 import { Trash2, Key } from "lucide-react";
 
 import { useEffect, useState } from "react";

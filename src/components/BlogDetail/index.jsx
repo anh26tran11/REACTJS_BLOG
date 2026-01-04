@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import BadgeLayout from "@/components/ui/BadgeLayout";
+import BadgeLayout from "../ui/Badge";
 
 const BlogDetail = ({ blogDetail }) => {
   if (!blogDetail) {
