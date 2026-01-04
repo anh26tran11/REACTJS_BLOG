@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import Badge from "@/components/ui/Badge";
+import BadgeLayout from "@/components/ui/BadgeLayout";
 import { Trash2, Key } from "lucide-react";
 
 import { useEffect, useState } from "react";
@@ -37,13 +37,13 @@ export default function UserTable({
                     <td className="py-3 font-medium">{user.username}</td>
                     <td className="py-3">{user.email}</td>
                     <td className="py-3">
-                      <Badge
+                      <BadgeLayout
                         variant={
                           user.role === "Admin" ? "default" : "secondary"
                         }
                       >
                         {user.role}
-                      </Badge>
+                      </BadgeLayout>
                     </td>
                     <td className="py-3">
                       <div className="flex justify-center gap-2">

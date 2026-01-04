@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import Badge from "@/components/ui/Badge";
+import BadgeLayout from "@/components/ui/BadgeLayout";
 
 const BlogDetail = ({ blogDetail }) => {
   if (!blogDetail) {
@@ -22,12 +22,12 @@ const BlogDetail = ({ blogDetail }) => {
           </h1>
 
           {/* Author role */}
-          <Badge
+          <BadgeLayout
             variant="outline"
             className="px-4 py-1 rounded-full text-blue-600 border-blue-300"
           >
             {blogDetail.authorRole}
-          </Badge>
+          </BadgeLayout>
 
           {/* Image */}
           <img
